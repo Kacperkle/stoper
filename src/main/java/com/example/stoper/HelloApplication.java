@@ -64,6 +64,9 @@ public class HelloApplication extends Application {
         buttonLap.setOnAction(e -> {
             if (running) {
                 laps.add("Punkt: " + formatTime(elapsedTime));
+                Label c = new Label("Punkt: " + formatTime(elapsedTime));
+                root.getChildren().add(c);
+
             }
         });
 
